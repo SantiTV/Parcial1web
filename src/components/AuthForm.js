@@ -9,7 +9,7 @@ const AuthForm = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        if (username === 'admin' && password === '1234') {
+        if (username === 'admin' && password === 'pass') {
             navigate('/robots');
         } else {
             setError('Credenciales incorrectas');
