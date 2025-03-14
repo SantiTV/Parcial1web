@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AuthForm from './components/AuthForm';
+import RobotDetail from './components/RobotDetail';
+import RobotList from './components/RobotList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <h1>Adopta un Robot con Robot Lovers</h1>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<AuthForm />} />
+                    <Route path="/robots" element={<RobotList />} />
+                    <Route path="/robots/:id" element={<RobotDetail />} />
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
