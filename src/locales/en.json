@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Robot A",
+    "modelo": "RX-78",
+    "empresaFabricante": "RoboCorp",
+    "añoFabricacion": "2022",
+    "capacidadProcesamiento": "4.2 GHz",
+    "humor": "Feliz",
+    "imagen": "https://example.com/robotA.jpg"
+  }
+]
